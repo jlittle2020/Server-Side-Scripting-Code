@@ -1,0 +1,23 @@
+<!--
+   Author: Jonathon Little
+   Date: 2/25/20
+   Purpose: Creates a form that will take four words from the user and then output a jumbled version of the word.
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 
+STRICT//EN" "http://www.w3.org/TR/xhtmll/DTD/xhtmll-strict.dtd">                                         <!-- Declares the DOCTYPE to XHTML 1.0 Strict so different browsers read the file the same way -->
+<html xmlns="http://www.w3.org/1999/xhtml">                                                              <!-- Validates and associates the document to the XHTML namespace. Opens the document -->
+<head>                                                                                                   <!-- Opens the head portion of the document -->
+   <title>Jumble Maker</title>                                                                           <!-- Sets the title of the page to Jumble Maker -->
+   <meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>                             <!-- Used so the page displays correctly and assists the browser to know what encoding to use -->
+</head>                                                                                                  <!-- Closes the head portion of the document -->
+<body>                                                                                                   <!-- Opens the body portion of the document -->
+   <form action= "Little_Ch4_1_process_JumbleMaker.php" method="post">                                   <!-- Opens a form and connects the data to the process document written in php once submitted -->
+      Word 1: <input type="text" name="Word1"/><br/>                                                     <!-- Creates an input section for Word 1 so the user can input what text they desire -->
+      Word 2: <input type="text" name="Word2"/><br/>                                                     <!-- Creates an input section for Word 2 so the user can input what text they desire -->
+      Word 3: <input type="text" name="Word3"/><br/>                                                     <!-- Creates an input section for Word 3 so the user can input what text they desire -->
+      Word 4: <input type="text" name="Word4"/><br/>                                                     <!-- Creates an input section for Word 4 so the user can input what text they desire -->
+      <input type="reset" value="Clear Form"/>&nbsp;                                                     <!-- Creates a button that will reset the form and clear out any entered values within the input sections -->
+      &nbsp;<input type="submit" name="Submit" value="Send Form"/>                                       <!-- Creates a button that will send the form to the process document to have the values processed and jumbled -->
+   </form>                                                                                               <!-- Closes the form -->
+</body>                                                                                                  <!-- Closes the body portion of the document -->
+</html>                                                                                                  <!-- Closes the document -->

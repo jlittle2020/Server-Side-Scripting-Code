@@ -1,0 +1,21 @@
+<!--
+   Author: Jonathon Little
+   Date: 3/8/2020
+   Purpose: Gets the user to input the amount of hours worked in a week and their hourly wage.
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 
+STRICT//EN" "http://www.w3.org/TR/xhtmll/DTD/xhtmll-strict.dtd">                                         <!-- Declares the DOCTYPE to XHTML 1.0 Strict so different browsers read the file the same way -->
+<html xmlns="http://www.w3.org/1999/xhtml">                                                              <!-- Validates and associates the document to the XHTML namespace. Opens the document -->
+<head>                                                                                                   <!-- Opens the head portion of the document -->
+   <title>Paycheck</title>                                                                               <!-- Sets the title of the page to Paycheck -->
+   <meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>                             <!-- Used so the page displays correctly and assists the browser to know what encoding to use -->
+</head>                                                                                                  <!-- Closes the head portion of the document -->
+<body>                                                                                                   <!-- Opens the body portion of the document -->
+   <form action= "Little_Ch4_4_Paycheck.php" method="post">                                              <!-- Opens a form and connects the data to the process document written in php once submitted -->
+      Hours Worked This Week: <input type="text" name="Hours"/><br/>                                     <!-- Creates an input section for Hours so the user can input the amount of hours they worked -->
+      Hourly Wage: <input type="text" name="Wage"/><br/>                                                 <!-- Creates an input section for Wage so the user can input the amount of wage they are paid per hour -->
+      <input type="reset" value="Clear Form"/>&nbsp;                                                     <!-- Creates a button that will reset the form and clear out any entered values within the input sections -->
+      &nbsp;<input type="submit" name="Submit" value="Send Form"/>                                       <!-- Creates a button that will send the form to the process document to have the values processed -->
+   </form>                                                                                               <!-- Closes the form -->
+</body>                                                                                                  <!-- Closes the body portion of the document -->
+</html>                                                                                                  <!-- Closes the document -->

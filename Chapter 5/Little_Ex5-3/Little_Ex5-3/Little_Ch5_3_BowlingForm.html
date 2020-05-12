@@ -1,0 +1,22 @@
+<!--
+   Author: Jonathon Little
+   Date: 3/19/2020
+   Purpose: Get information from bowlers that sign up for a bowling tournament.
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 
+STRICT//EN" "http://www.w3.org/TR/xhtmll/DTD/xhtmll-strict.dtd">                                         <!-- Declares the DOCTYPE to XHTML 1.0 Strict so different browsers read the file the same way -->
+<html xmlns="http://www.w3.org/1999/xhtml">                                                              <!-- Validates and associates the document to the XHTML namespace. Opens the document -->
+<head>                                                                                                   <!-- Opens the head portion of the document -->
+   <title>Bowling Form</title>                                                                           <!-- Sets the title of the page to Bowling Form -->
+   <meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>                             <!-- Used so the page displays correctly and assists the browser to know what encoding to use -->
+</head>                                                                                                  <!-- Closes the head portion of the document -->
+<body>                                                                                                   <!-- Opens the body portion of the document -->
+   <form action= "Little_Ch5_3_process_BowlingForm.php" method="post">                                   <!-- Opens a form and connects the data to the process document written in php once submitted -->
+      Name: <input type="text" name="Name"/><br/>                                                        <!-- Creates an input section for Name so the user can input their name -->
+      Age: <input type="text" name="Age"/><br/>                                                          <!-- Creates an input section for Age so the user can input their age -->
+      Bowling Average: <input type="text" name="Average"/><br/>                                          <!-- Creates an input section for Bowling Average so the user can input their bowling average -->
+      <input type="reset" value="Clear Form"/>&nbsp;                                                     <!-- Creates a button that will reset the form and clear out any entered values within the input sections -->
+      &nbsp;<input type="submit" name="Submit" value="Send Form"/>                                       <!-- Creates a button that will send the form to the process document to have the values processed and jumbled -->
+   </form>                                                                                               <!-- Closes the form -->
+</body>                                                                                                  <!-- Closes the body portion of the document -->
+</html>                                                                                                  <!-- Closes the document -->

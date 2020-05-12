@@ -1,0 +1,80 @@
+/* 
+   Author: Jonathon Little
+   Date: 4/22/2020
+   Purpose: Adds some design to the InterviewForm.html page.
+ */
+* {margin: 0px;
+   padding: 0px;}                                                             /* Sets all aspects of the page margin to 0px and padding to 0px */
+main {background-color: #FFFFFF;
+	  padding-top: 1px;
+      padding-right: 20px;
+	  padding-bottom: 20px;
+	  padding-left: 20px;
+      display: block;}                                                        /* Sets the main portion of the page's background color to white, top padding to 1px, right padding to 20px, bottom padding to 20px, left padding to 20px, and changes the display to block format */
+body {background-color: #FFFFFF;
+	  color: #666666;
+	  background-image: linear-gradient(to bottom, #FFFFFF, #000000);
+	  background-repeat: no-repeat;
+	  font-family: Times, Times New Roman, serif;}                            /* Sets the body portion of the page's background to white, color to grey, applies a background gradient that goes from white to black, turns off background repeat, and sets the font family to Times, Times New Roman, serif */
+header {background-color: #000000;
+	    color: #FFFFFF;
+		height: 60px;
+		text-align: center;
+		padding-top: 15px;}                                                   /* Sets the header portion of the page's background color to black, color to white, height to 60px, text aligned to center, and top padding to 15px */
+nav {background-color: #FFFFFF;
+     font-weight: bold;
+	 font-size: 120%;
+	 text-align: center;
+	 padding: 5px;}                                                           /* Sets the navigation portion of the page's background color to white, font to bold, font size to 120% scale, aligned text to center, and padding to 5px */
+nav a {text-decoration: none;}                                                /* Sets the navigation anchor text decoration to none */
+a {text-decoration: none;
+   color: #000000;}                                                           /* Sets the anchor text decoration to none and its color to black */
+a:hover {text-decoration: underline;}                                         /* Sets the anchor to display an underline text decoration when the pointer hovers over it */
+h1 a:hover {text-decoration: none;}                                           /* Sets the header 1 anchor text decoration to none when the pointer hovers over it */
+h1, h2, h3 {font-family: Century Gothic;
+            font-weight: normal;
+            margin-bottom: 15px;}                                             /* Sets the headers 1, 2, and 3 styles to the font family of Century Gothic, normal text style, and a bottom margin of 15px */
+input[type="submit"],[type="file"] button {border-radius: 4px;
+                                           color: #EFEFEF;
+                                           width: 200px;
+                                           padding: 7px;
+                                           font-family: Calibri;
+                                           background-image: linear-gradient(to bottom, #32CD32, #006400);
+                                           border: 0px;
+                                           margin-top: 15px;
+                                           border: none;
+                                           outline-width: 0;
+                                           outline-style: none;}              /* Sets the submit button to have a border radius of 4px, color of text to a smoky white color, width of 200px, padding of 7px, to the font-family Calibri, then sets a color gradient for the button texture which goes from lime green to dark green, a border of 0px, a top margin of 15px, no border, outline width to 0, and no outline style */ 
+input[type="text"] {border-radius: 15px;
+                    width: 200px;
+                    padding: 10px;
+                    font-family: Arial;
+                    margin-top: 15px;
+                    border: none;
+                    background-color: #DFDFDF;
+                    outline-width: 0;
+                    outline-style: none;}                                     /* Sets the text input type to have a border radius of 15px, width of 200px, padding of 10px, to the font family of Arial, a top margin of 15px, no border, a background color of grey, no outline width, no outline style */
+textarea {width: 350px;
+          height: 100px;
+          margin-top: 15px;
+          margin-bottom: 15px;}                                               /* Sets the textarea to a width of 350px, height of 100px, top margin of 15px, bottom margin of 15px */
+button:focus {outline-width: 0;
+              outline-style: none;}                                           /* Sets the button when it has the mouse pointer clicked to no outline width or style */
+div {text-align: center;}                                                     /* Sets the div portion of the page to have the text aligned to center */
+div.pane {width: 1000px;
+          margin: 0px auto;}                                                  /* Sets the div pane portion of the page to have a width of 1000px, and an auto margin of 0px */
+div.header {padding-top: 15px;
+            padding-bottom: 15px;}                                            /* Sets the div header portion of the page to have a top padding of 15px and a bottom padding of 15px */
+div.content {background-color: #EFEFEF;
+             margin-top: 15px;
+             width: 970px;
+             display: block;
+			 position: relative;
+			 float: left;
+             padding: 15px;}                                                  /* Sets the div content portion of the page to have a background color of smoky white, a top margin of 15px, a width of 970px, a display in block format, relative positioning, float towards the left, and a padding of 15px */
+#wrapper {margin: auto;
+          width: 80%;
+		  background-color: #FFFFFF;
+		  min-width: 960px;
+		  max-width: 2048px;
+		  box-shadow: 3px 3px 0 #333333;}                                     /* Sets the wrapper id portion of the page to have an automatic margin, a width of 80%, background color of white, a min-width of 960px, a max-width of 2048px, and a box shadow that was positioned at 3px 3px 0 of the document and with a color of dark gray */

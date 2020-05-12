@@ -1,0 +1,22 @@
+<!--
+   Author: Jonathon Little
+   Date: 4/15/2020
+   Purpose: Gets the user's name to sign into the guest book.
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 
+STRICT//EN" "http://www.w3.org/TR/xhtmll/DTD/xhtmll-strict.dtd">                         <!-- Declares the DOCTYPE to XHTML 1.0 Strict so different browsers read the file the same way -->
+<html xmlns="http://www.w3.org/1999/xhtml">                                              <!-- Validates and associates the document to the XHTML namespace. Opens the document -->
+<head>                                                                                   <!-- Opens the head portion of the document -->
+   <title>Guest Book</title>                                                             <!-- Sets the title of the page to Guest Book -->
+   <meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>             <!-- Used so the page displays correctly and assists the browser to know what encoding to use -->
+</head>                                                                                  <!-- Closes the head portion of the document -->
+<body>                                                                                   <!-- Opens the body portion of the document -->
+   <h2>Enter your name to sign our guest book</h2>                                       <!-- Enters a header on the web page that tells the user to sign the guest book -->
+   <form method="POST" action="Little_Ch8_Ex1_SignGuestBook.php">                        <!-- Creates a form that will route to the SignGuestBook.php file when submitted -->
+   <p>First Name <input type="text" name="first_name"/></p>                              <!-- Creates an input on the form that will get and retain the user's first name -->
+   <p>Last Name <input type="text" name="last_name"/></p>                                <!-- Creates an input on the form that will get and retain the user's last name -->
+   <p><input type="submit" value="Submit"/></p>                                          <!-- Creates an input on the form that will send the information that was inputted -->
+   </form>                                                                               <!-- Closes the form -->
+   <p><a href="Little_Ch8_Ex2_ShowGuestBook.php">Show Guest Book</a></p>                 <!-- Creates a link that will show the names of every user that has signed the guest book -->
+</body>                                                                                  <!-- Closes the body portion of the document -->
+</html>                                                                                  <!-- Closes the file -->

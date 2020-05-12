@@ -1,0 +1,42 @@
+<!--
+   Author: Jonathon Little
+   Date: 4/22/2020
+   Purpose: Gets information about an interview event from the interviewer.
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 
+STRICT//EN" "http://www.w3.org/TR/xhtmll/DTD/xhtmll-strict.dtd">                                        <!-- Declares the DOCTYPE to XHTML 1.0 Strict so different browsers read the file the same way -->
+<html xmlns="http://www.w3.org/1999/xhtml">                                                             <!-- Validates and associates the document to the XHTML namespace. Opens the document -->
+<head>                                                                                                  <!-- Opens the head portion of the document -->
+   <title>Interview Form</title>                                                                        <!-- Sets the title of the page to Interview Form -->
+   <meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>                            <!-- Used so the page displays correctly and assists the browser to know what encoding to use -->
+   <link rel="stylesheet" href="Little_Ch8_Ex4_InterviewFormDesign.css"/>                               <!-- Connects a stylesheet to add design to the look of the page -->
+</head>                                                                                                 <!-- Closes the head portion of the document -->
+<body>                                                                                                  <!-- Opens the body portion of the document -->
+   <div id="wrapper">                                                                                   <!-- Sets a div that applies the design specifications of the wrapper id -->
+   <h2>Please enter information about the Interview</h2>                                                <!-- Enters a header on the web page that tells the interviewer to enter information about the interview -->
+   <form method="POST" action="Little_Ch8_Ex4_SubmitCandidateInfo.php">                                 <!-- Creates a form that will route to the SubmitCandidateInfo.php file when submitted -->
+   <label for="interviewer_name">&#42;Interviewer Name </label>                                         <!-- Sets a label for the input for the interviewer's name -->
+   <input type="text" name="interviewer_name" required/>                                                <!-- Creates an input on the form that will get and retain the interviewer's name (required to be entered before the form allows a submittal) -->
+   <label for="position">&#42;Position </label>                                                         <!-- Sets a label for the input for the work position -->
+   <input type="text" name="position" required/>                                                        <!-- Creates an input on the form that will get and retain the work position (required to be entered before the form allows a submittal) -->
+   <label for="interview_date">&#42;Date of Interview </label>                                          <!-- Sets a label for the input for the date of the interview -->
+   <input type="date" name="interview_date" required/></br>                                             <!-- Creates an input on the form that will get and retain the interview date (required to be entered before the form allows a submittal) -->
+   <label for="candidate_name">&#42;Candidate Name </label>                                             <!-- Sets a label for the input for the candidate's name -->
+   <input type="text" name="candidate_name" required/>                                                  <!-- Creates an input on the form that will get and retain the candidate's name (required to be entered before submittal) -->
+   <label for="appearance">Professional Appearance </label>                                             <!-- Sets a label for the checkbox input for whether or not the candidate had a professional appearance -->
+   <input type="hidden" name="appearance" value="No"/>                                                  <!-- Creates a hidden input on the form under the same name of the checkbox input so that way if the checkbox is not checked the value that gets sent is a No -->
+   <input type="checkbox" name="appearance" value="Yes"/></br>                                          <!-- Creates an input on the form that if checked will send the value of Yes -->
+   <label for="comm_ability">&#42;Communication Abilities </label></br>                                 <!-- Sets a label for the input for the candidate's communication abilities -->
+   <textarea type="text" name="comm_ability" required></textarea></br>                                  <!-- Creates a textarea input that will get and retain the description of the candidate's communication abilities -->
+   <label for="comp_skill">&#42;Computer Skills </label></br>                                           <!-- Sets a label for the input for the candidate's computer skills -->
+   <textarea type="text" name="comp_skill" required></textarea></br>                                    <!-- Creates a textarea input that will get and retain the description of the candidate's computer skills -->
+   <label for="bus_knowledge">&#42;Business Knowledge </label></br>                                     <!-- Sets a label for the input for the candidate's business knowledge -->
+   <textarea type="text" name="bus_knowledge" required></textarea></br>                                 <!-- Creates a textarea input that will get and retain the description of the candidate's business knowledge -->
+   <label for="comments">Comments </label></br>                                                         <!-- Sets a label for the input for any extra comments the interviewer may have about the candidate -->
+   <textarea type="text" name="comments"></textarea></br>                                               <!-- Creates a textarea input that will get and retain the description of any extra comments about the candidate the interviewer may have -->
+   <input type="submit" value="Submit"/>                                                                <!-- Creates a submit button on the form that will send all the information that was entered -->
+   </form>                                                                                              <!-- Closes the form -->
+   <p><a href="Little_Ch8_Ex4_ShowInterviewCandidates.php">Show Candidates For Interview</a></p>        <!-- Creates a link that will show all the candidate's interview evaluations -->
+   </div>                                                                                               <!-- Closes the div that applies the design specifications of the wrapper id -->
+</body>                                                                                                 <!-- Closes the body portion of the document -->
+</html>                                                                                                 <!-- Closes the file -->

@@ -1,0 +1,36 @@
+/*
+   Author: Jonathon Little
+   Date: 4/27/2020
+   Purpose: Adds some detail to the Movie Ticket Prices page.
+*/
+html {
+     background: #DFDFDF;
+}                                               /* Sets the background of the page to a light gray color */
+
+h1, p {
+     text-align: center;
+     font-family: "Bookman Old Style";
+}                                               /* Aligns the h1 size header and paragraph text styles to center alignment and to a font of Bookman Old Style */
+
+table {
+     border-bottom: 5px solid #000000;
+     border-left: 5px solid #000000;
+     border-right: 5px solid #000000;
+     width: 25%;
+}                                               /* Adds a bottom, left, and right solid black border to the table and sets the table width to 25% */
+
+th {
+     border-top: 5px solid #000000;
+     border-bottom: 3px double #000000;
+     background-color: #FFF5BA;
+     font-family: "Bookman Old Style";
+}                                               /* Adds top solid and bottom double black borders to the table headers with a pastel type orange background color and text font of Bookman Old Style */
+
+td {
+     background-color: #FFFFD1;
+     font-family: "Bookman Old Style";
+}                                               /* Adds a background color of a pastel like orange to the table data and sets the text font to Bookman Old Style */
+
+tr {
+     text-align: center;
+}                                               /* Sets the text within the table rows to center alignment */
